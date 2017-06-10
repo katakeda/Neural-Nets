@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neural Nets Model</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.0.11/synaptic.js"></script>
+    <script src="js/p5.min.js"></script>
+    <script src="js/sketch.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title">
+  </head>
+  <body>
+    <div id="main-container" class="container-fluid">
+      <div class="row">
+        <div id="sidebar" class="col-md-4">
+          <div class="page-header">
+            <h1>Settings</h1>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <p><label for="rate">Learning rate:</label></p>
+              <div id="slider-r">
+                <div id="handler-r" class="ui-slider-handle"></div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <p><label for="iterations">Maximum iterations:</label></p>
+              <div id="slider-i">
+                <div id="handler-i" class="ui-slider-handle"></div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <p><label for="error">Minimum error:</label></p>
+              <div id="slider-e">
+                <div id="handler-e" class="ui-slider-handle"></div>
+              </div>
+            </li>
+            <button id="btn-train" class="btn btn-default btn-block">Train</button>
+            <button id="btn-run" class="btn btn-default btn-block">Run</button>
+          </ul>
+        </div>
+        <div id="model" class="col-md-8"></div>
+      </div>
+    </div>
+  </body>
+</html>
