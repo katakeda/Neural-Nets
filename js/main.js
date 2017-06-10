@@ -93,6 +93,6 @@ $(document).ready(function() {
 
   // Run with given input
   $('#btn-run').click(function() {
-    window.localStorage.setItem('result', myNetwork.activate([1, 1]));
+    $('#output-val').text(myNetwork.activate([1, 1]));
   })
 })

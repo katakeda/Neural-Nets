@@ -3,7 +3,7 @@ function setup() {
 }
 
 function draw() {
-  var x = Math.round(window.localStorage.getItem('result'));
+  var x = Math.round($('#output-val').text());
 
   // Input
   for(let i = 0; i < 2; i++) {
