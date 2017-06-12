@@ -21,6 +21,23 @@
           <div class="page-header">
             <h1>Settings</h1>
           </div>
+          <div id="input">
+            Input:
+            <span>
+              <select id="input-select">
+                <option value="00">(0,0)</option>
+                <option value="10">(1,0)</option>
+                <option value="01">(0,1)</option>
+                <option value="11" selected>(1,1)</option>
+              </select>
+            </span>
+          </div>
+          <div id="target">
+            Target: <span id="target-val"></span>
+          </div>
+          <div id="output">
+            Ouput: <span id="output-val"></span>
+          </div>
           <ul class="list-group">
             <li class="list-group-item">
               <p><label for="rate">Learning rate:</label></p>
@@ -35,7 +52,7 @@
               </div>
             </li>
             <li class="list-group-item">
-              <p><label for="error">Minimum error:</label></p>
+              <p><label for="error">Maximum error:</label></p>
               <div id="slider-e">
                 <div id="handler-e" class="ui-slider-handle"></div>
               </div>
@@ -43,12 +60,6 @@
           </ul>
           <button id="btn-train" class="btn btn-default btn-block">Train</button>
           <button id="btn-run" class="btn btn-default btn-block">Run</button>
-          <div id="target">
-            Target: <span id="target-val">0</span>
-          </div>
-          <div id="output">
-            Ouput: <span id="output-val"></span>
-          </div>
         </div>
         <div id="model" class="col-md-8"></div>
       </div>
